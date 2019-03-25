@@ -55,7 +55,10 @@ function forms() {
                     statusMessage.innerHTML = message.success;
                 })
                 .catch(() => statusMessage.innerHTML = message.failure)
-                .then(clearInput);
+                .then(clearInput)
+                .then( setTimeout(() => {
+                    statusMessage.remove();  
+                }, 2000));
 
             function clearInput() {
                 for (let i = 0; i < input.length; i++) {

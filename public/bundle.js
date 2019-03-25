@@ -10899,7 +10899,9 @@ function forms() {
         statusMessage.innerHTML = message.success;
       }).catch(function () {
         return statusMessage.innerHTML = message.failure;
-      }).then(clearInput);
+      }).then(clearInput).then(setTimeout(function () {
+        statusMessage.remove();
+      }, 2000));
 
       function clearInput() {
         for (var i = 0; i < input.length; i++) {
