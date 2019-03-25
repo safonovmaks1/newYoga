@@ -1,3 +1,7 @@
+require('es6-promise-polyfill').Promise;
+require('formdata-polyfill');
+require('nodelist-foreach-polyfill');
+
 window.addEventListener('DOMContentLoaded', function () {
     
     'use strict';
