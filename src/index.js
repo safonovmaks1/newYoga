@@ -1,4 +1,5 @@
-require('es6-promise-polyfill').Promise;
+// require('es6-promise-polyfill').Promise;
+require('es6-promise').polyfill();
 require('formdata-polyfill');
 require('nodelist-foreach-polyfill');
 
